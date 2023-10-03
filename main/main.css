@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", "sans-serif";
+    font-size: 18px;
+    line-height: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.container {
+    width: 1340px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.hero__h1 {
+    align-items: center;
+    transform: translateX(26%);
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.form__label {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.form__span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding-left: 30px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid dimgray;
+    cursor: pointer;
+}
+
+.form__input:checked+.span__basketboll {
+    background-image: url("../img/basketball-ball.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form__input:checked+.span__voleybol {
+    background-image: url("../img/volleyball-ball.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form__input:checked+.span__hokkey {
+    background-image: url("../img/hockey-puck.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form__input:checked+.span__tennis {
+    background-image: url("../img/table-tennis.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form__input:disabled+.input__color {
+    color: dimgray;
+    opacity: 0.5px;
+}
+
+.form__button {
+    display: block;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 6px;
+    background-color: rgb(75, 72, 74);
+}
